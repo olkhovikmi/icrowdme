@@ -1,65 +1,64 @@
-
 /* Подключение шрифтов */
 
 @font-face {
-  font-family: "Montserrat"; 
+  font-family: "Montserrat";
   src: url("/fonts/montserrat.woff2") format("woff2"),
     url("/fonts/montserrat.woff2") format("woff");
   font-style: normal;
-	font-weight: 400;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Nunito"; 
+  font-family: "Nunito";
   src: url("/fonts/Nunitoregular.woff2") format("woff2"),
     url("/fonts/Nunitoregular.woff") format("woff");
   font-style: normal;
-	font-weight: 400;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "OpenSans"; 
+  font-family: "OpenSans";
   src: url("/fonts/opensans.woff2") format("woff2"),
     url("/fonts/opensans.woff") format("woff");
   font-style: normal;
-	font-weight: 400;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "OpenSans"; 
+  font-family: "OpenSans";
   src: url("/fonts/opensansbold.woff2") format("woff2"),
     url("/fonts/opensansbold.woff") format("woff");
   font-style: normal;
-	font-weight: 700;
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: "OpenSans"; 
+  font-family: "OpenSans";
   src: url("/fonts/opensanslight.woff2") format("woff2"),
     url("/fonts/opensanslight.woff") format("woff");
   font-style: normal;
-	font-weight: 300;
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "OpenSans"; 
+  font-family: "OpenSans";
   src: url("/fonts/opensanssemibold.woff2") format("woff2"),
     url("/fonts/opensanssemibold.woff") format("woff");
   font-style: normal;
-	font-weight: 600;
+  font-weight: 600;
 }
 
 /* Шаблоны */
 
-/* Переменные */ 
+/* Переменные */
 
-body {	
-	font-family: "OpenSans", sans-serif;	
-	font-style: normal;
-	font-weight: 400;
-	color: #999999;
+body {
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #999999;
 
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .header-top {
@@ -77,8 +76,31 @@ body {
   width: 100%;
   padding: 25px 0 30px 0;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
+
+  .btn {
+    width: 100px;    
+    padding: 12px 0;
+
+    font-family: "OpenSans", sans-serif;
+    font-size: 0.85em;
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;    
+    text-transform: uppercase;
+
+    background-color:#bcda5c;
+    border:none;
+    border-radius: 20px;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    border: 1px solid #707173;
+  }
 }
 
 .logo {
@@ -87,7 +109,8 @@ body {
 
     font-family: "Nunito";
     font-size: 2em;
-    
+    text-transform: uppercase;
+    cursor: pointer;
   }
 }
 
@@ -95,11 +118,86 @@ body {
   display: flex;
   justify-content: flex-start;
   margin: 0;
-  padding: 0;
+  padding: 0; 
 
   list-style: none;
 
-    .nav-menu__item:not(:last-child) {
-      margin-right: 30px;
+  .nav-menu__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  a {
+    font-family: "OpenSans", sans-serif;
+    font-size: 0.85em;
+    font-style: normal;
+    font-weight: 600;
+    color: #999999;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    color: #807d7d;
   }
 }
+
+.header-middle {  
+ 
+  background-image: url("/img/header__background.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;  
+
+  .header-middle__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    
+
+    font-family: "OpenSans", sans-serif;
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    line-height: 77px;
+
+    span {
+      display: block;
+      font-family: "OpenSans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 0.73em;     
+
+    }
+  }
+
+  .header-middle__link {
+    display: inline-block;
+    width: 250px;     
+    margin-left: 40%;        
+    padding: 32px 0;
+    
+    font-family: "OpenSans", sans-serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    
+    background-color: #99c50a;    
+    border-radius: 20px;
+    
+  }
+
+  .header-middle__link:hover {
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.54);
+  }
+
+  .header-gb {
+    padding-top: 160px;
+    padding-bottom: 160px;
+    background-color: rgba(200, 207,202,0.35);
+  }
+}
+
