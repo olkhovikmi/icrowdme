@@ -48,8 +48,6 @@
   font-weight: 600;
 }
 
-/* Шаблоны */
-
 /* Переменные */
 
 body {
@@ -215,7 +213,7 @@ body {
   top: 500px;
   right: 125px;
 
-  .arrow__left {    
+  .arrow__left {
     display: inline-block;
     width: 13px;
     height: 20px;
@@ -228,7 +226,7 @@ body {
     cursor: pointer;
   }
 
-  .arrow__right {    
+  .arrow__right {
     display: inline-block;
     width: 13px;
     height: 20px;
@@ -245,4 +243,47 @@ body {
 .visibility_hidden {
   position: absolute;
   appearance: none;
+}
+
+/***************************** PAGE *****************************/
+
+// Шаблоны 
+
+%semibold {
+  font-family: "OpenSans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+
+.page__top {
+  padding: 75px 0;
+}
+
+.work {
+  padding: 0 45px;
+
+  text-align: center;
+
+  .work__title {
+    margin: 0;
+
+    color: #515151;
+    @extend %semibold;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    line-height: 2em;
+  }
+
+  .work__text {    
+    margin: 30px 0;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  .work__text:last-child {
+    margin: 0;
+    margin-bottom: 150px;
+  }
 }
