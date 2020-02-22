@@ -542,3 +542,107 @@ body {
 .project:last-child {
 		margin-right: 0;
 }
+
+.page__middle {
+		margin-bottom: 75px;
+}
+
+.page__bottom {
+		margin-bottom: 45px;
+		background-image: url("/img/main__bg.jpg");
+		background-repeat: no-repeat;
+		background-position: 50% 100%;
+}
+
+.community {
+		margin-bottom: 95px;
+		text-align: center;
+}
+.community__title {
+		margin-top: 0;
+		margin-bottom: 45px;
+		color: #9ec02d;
+		font-size: 2.45em;
+		font-weight: 600;
+}
+.community__text {
+		width: 90%;
+		margin: 0 auto;
+		font-size: 1.2em;
+		line-height: 1.5em;
+}
+
+.box-comment {
+		display: flex;
+		justify-content: space-between;
+		padding-right: 40px;
+		padding-left: 40px;
+		padding-bottom: 155px;
+		text-align: center;
+}
+
+.comment {
+		position: relative;
+		width: 42%;
+		background-color: #fff;
+		border-radius: 10px;
+}
+.comment__title {
+		margin: 20px 0;
+		color: #9ec02d;
+		font-size: 1.33em;
+		font-weight: 600;
+}
+.comment__text {
+		margin-top: 0;
+		margin-bottom: 25px;
+		padding: 0 30px;
+		font-size: 0.85em;
+		line-height: 1.5em;
+}
+
+.comment::after {
+		position: absolute;
+		bottom: -15px;
+		left: 82px;
+		display: block;
+		content: "";
+		width: 0;
+		height: 0;
+		border-right: 12px solid transparent;
+		border-left: 12px solid transparent;
+		border-bottom: 20px solid #ffff;
+		transform: rotate(-60deg);
+}
+
+.community__author {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		bottom: -90px;
+		left: 60px;
+}
+
+.author {
+		display: block;
+		margin-left: 20px;
+		font-family: "Montserrat", sans-serif;
+		font-size: 0.95em;
+		font-weight: 400;
+		color: #494949;
+}
+
+.box-company {
+		padding-bottom: 45px;
+}
+
+.container-company {
+		border-bottom: 1px solid #ededed;
+}
+
+.copy {
+		padding: 25px 0;
+		color: #848484;
+		font-size: 0.85em;
+		text-align: center;
+}
